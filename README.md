@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-tools-ternary-factory
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import createFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-tools-ternary-factory@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-tools-ternary-factory/tags). For example,
-
-```javascript
-import createFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-tools-ternary-factory@v0.1.1-deno/mod.js';
+var createFactory = require( '@stdlib/random-tools-ternary-factory' );
 ```
 
 #### createFactory( prng, idtypes, odtypes, policies\[, options] )
@@ -67,8 +80,8 @@ Returns a function for generating pseudorandom values drawn from a ternary PRNG.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -110,8 +123,8 @@ Returns a function for generating pseudorandom values drawn from a ternary PRNG.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -143,8 +156,8 @@ Returns an ndarray filled with pseudorandom values drawn from a ternary PRNG.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -186,9 +199,9 @@ By default, the function returns an ndarray having a data type determined by the
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import getDType from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var getDType = require( '@stdlib/ndarray-dtype' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -221,9 +234,9 @@ Fills an ndarray with pseudorandom values drawn from a ternary PRNG.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import ndzeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var ndzeros = require( '@stdlib/ndarray-zeros' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -262,8 +275,8 @@ The underlying pseudorandom number generator.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -291,8 +304,8 @@ The value used to seed the underlying pseudorandom value generator.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -318,9 +331,9 @@ If the factory function is provided a PRNG for uniformly distributed numbers, th
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -350,8 +363,8 @@ Length of the underlying pseudorandom value generator seed.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -377,9 +390,9 @@ If the factory function is provided a PRNG for uniformly distributed numbers, th
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -409,8 +422,8 @@ Writable property for getting and setting the underlying pseudorandom value gene
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -436,9 +449,9 @@ If the factory function is provided a PRNG for uniformly distributed numbers, th
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -468,8 +481,8 @@ Length of the underlying pseudorandom value generator state.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -495,9 +508,9 @@ If the factory function is provided a PRNG for uniformly distributed numbers, th
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -527,8 +540,8 @@ Size (in bytes) of underlying pseudorandom value generator state.
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -554,9 +567,9 @@ If the factory function is provided a PRNG for uniformly distributed numbers, th
 <!-- eslint-disable max-len -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-var minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd-shuffle' ).normalized;
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var minstd = require( '@stdlib/random-base-minstd-shuffle' ).normalized;
+var frechet = require( '@stdlib/random-base-frechet' );
 
 var idt = dtypes( 'real_and_generic' );
 var odt = dtypes( 'real_floating_point_and_generic' );
@@ -606,11 +619,11 @@ var len = random.byteLength;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import frechet from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-frechet@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import createFactory from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-tools-ternary-factory@deno/mod.js';
+var frechet = require( '@stdlib/random-base-frechet' );
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var createFactory = require( '@stdlib/random-tools-ternary-factory' );
 
 // Create a new PRNG factory...
 var idt = dtypes( 'real_and_generic' );
@@ -672,7 +685,7 @@ console.log( ndarray2array( x ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -702,8 +715,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-tools-ternary-factory.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-tools-ternary-factory
 
-[test-image]: https://github.com/stdlib-js/random-tools-ternary-factory/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/random-tools-ternary-factory/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/random-tools-ternary-factory/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/random-tools-ternary-factory/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-tools-ternary-factory/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-tools-ternary-factory?branch=main
@@ -735,13 +748,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-tools-ternary-factory/main/LICENSE
 
-[@stdlib/ndarray/policies]: https://github.com/stdlib-js/ndarray-policies/tree/deno
+[@stdlib/ndarray/policies]: https://github.com/stdlib-js/ndarray-policies
 
-[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders/tree/deno
+[@stdlib/ndarray/orders]: https://github.com/stdlib-js/ndarray-orders
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/deno
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/deno
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 </section>
 
